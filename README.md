@@ -16,8 +16,16 @@
         self.latitude = 22.52680
         self.longitude = 113.93082'
      通过谷歌地图找到你所需要位置的经纬度，替换上面的经纬度即可
-
-    二、爬取：
+    
+    三、修改爬取页数：
+    在run.py中找到如下代码：
+    '#修改爬取页数(乘以8)
+        maxpage=31
+        for i in range(0, int(maxpage)):
+            page_num = i * 8
+            self.main_parse(page_num)'
+            
+    四、爬取：
     运行run.py开始抓取商家数据（只包含商家名字、商品名字和商品月销量，需要添加其他字段请参考json文件自行修改）
     （第一次运行会要求填入手机号获取验证码，之后cookies保存在cookies.txt文件中）
 
