@@ -1,6 +1,6 @@
 import requests,json
-from web.login import Login
-from web.eleme_mysql import ormal_Mysql
+from login import Login
+from eleme_mysql import ormal_Mysql
 
 while True:
     with open('cookies.txt','r')as f:
